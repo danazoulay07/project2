@@ -1,0 +1,213 @@
+body,html {
+    text-align:center !important;
+ margin:0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+header {
+ margin:auto;
+ width:80%;
+ padding: 10px;
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 1px solid black;
+}
+header h1 {
+text-align: center;
+margin-left: 600px;
+color:brown;
+}
+header #logo {
+ height:80px;
+ width:80px;
+ font-weight: bold !important;
+ padding-top:30px !important;
+ border-radius: 50% !important;
+ background-color: rgb(255, 158, 47) !important;
+ border: 1px solid #423116 !important;
+ text-align: center !important;
+ margin-right: 10px !important;
+ box-shadow: 2px 2px 8px rgb(0, 0, 0) !important;
+}
+nav {
+ margin:auto;
+ margin-top:5px;
+ width:80%;
+ text-align:center;
+ background-color: #e6f3ff;
+}
+nav ul {
+ padding:0;
+ margin:0;
+ margin-top:5px;
+ list-style-type: none;
+ display: flex;
+ justify-content: center;
+}
+nav ul li{
+ display: block;
+ margin: 0 150px 0 150px;
+
+ /* display: flex;
+ justify-content: space-between; */
+
+ padding: 5px;
+ background-color: brown;
+ border: 1px solid #161e35;
+ color: white;
+ font-weight: 400;
+ transition: .3s ease;
+ border-radius: 5px;
+}
+nav ul li:hover {
+ background-color: red;
+ color: black;
+ cursor: pointer;
+}
+#search {
+ margin:auto;
+ margin-top: 10px;
+ width:80%;
+ display: flex;
+
+ justify-content: center;
+}
+#search input, #search button {
+ margin-right: 5px;
+}
+#main {
+ padding: 10px;
+ width: 80%;
+ margin:auto;
+ margin-top: 5px;
+ border: 3px solid black;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap ;
+ background-color:gray;
+}
+
+/*cards*/
+#cardheader{ 
+ display: flex;
+ justify-content: space-between;
+ font-weight: bold;
+ background-color:pink;
+ color: black;
+}
+
+/*end cards*/
+/*tooggle switch*/
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 50px;
+ height: 24px;
+
+}
+
+.switch input { 
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+ color: coral;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 16px;
+ width: 16px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: greenyellow;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px greenyellow;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+/* end toggle switch*/
+/*modal*/
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+/* The Close Button */
+.close {
+color: black;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}   
+
+.card, .cardheader{
+    border-radius:0 0 40px 40px;
+}
+
+#moreinfo{
+    background-color: rgb(99, 139, 52);
+    border: 1px black solid;
+}
